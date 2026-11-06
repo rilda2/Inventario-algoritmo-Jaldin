@@ -21,7 +21,7 @@ function ejecutarPrueba(n) {
 
   
     for (let i = 0; i < 5; i++) {
-        const inicio = performance.now(); // Alta precisión en milisegundos
+        const inicio = performance.now(); 
         busquedaLineal(arr, objetivo);
         const fin = performance.now();
         tiempos.push(fin - inicio);
