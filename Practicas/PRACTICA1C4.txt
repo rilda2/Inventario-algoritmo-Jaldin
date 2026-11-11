@@ -1,0 +1,37 @@
+PRACTICA
+1 Busca el 31 con la binaria
+Tenemos 8 números, tomamos el medio que es el 19. 
+Ahora tenemos:
+[3, 8, 12, 19, 25, 31, 40, 47]
+Encontramos el 31 en el segundo paso.
+Resultado: 2 pasos
+- Primer medio: 19.
+- Segundo medio: 31.
+- El número 31 fue encontrado en 2 pasos.
+
+2 Busca el 5 (no está): 
+[3, 8, 12, 19, 25, 31, 40, 47]
+El medio es 19
+- Buscamos 5
+- Medio es 19 como 5 es menor que 19, buscamos en la mitad izquierda.
+Nos queda [3, 8, 12]
+
+El medio de los tres números es 8
+- Buscamos: 5
+- Medio: 8
+Como 5 es menor que 8, buscamos nuevamente a la izquierda nos queda [3]
+Buscamos 5 y medio es 3, como 5 es mayor que 3.
+- Primer medio: 19.
+- Segundo medio: 8.
+- Tercer medio: 3.
+- Resultado: el número 5 no se encuentra en la lista.
+- Cantidad de pasos: 3.
+
+
+Ejercicio 3: máximo de pasos
+La búsqueda binaria divide los datos en dos partes en cada paso, reduciendo progresivamente la cantidad de elementos que se deben revisar. 
+Para calcular la cantidad máxima de pasos utilizamos el logaritmo en base 2.
+
+Para 1.000 datos se necesitan como máximo 10 pasos y para 1.000.000 de datos se necesitan como máximo 20 pasos. 
+- Para 1.000 datos: 10 pasos.
+- Para 1.000.000 de datos: 20 pasos.
