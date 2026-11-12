@@ -1,0 +1,28 @@
+TABLA DE RESULTADOS
+
+Algoritmo	Corrida 1	Corrida 2	Corrida 3	Promedio
+Lineal		566.230 ms	533.531 ms	481.634 ms	527.132 ms
+Binaria		2.939 ms	0.713 ms	0.780 ms	1.477 ms
+
+1.Calcular el promedio
+Búsqueda lineal:
+		566.230+533.531+481.634 = 1581.395 = 527.132ms
+			3		     3	
+Búsqueda binario:
+		2.939+0.713+0.780 =   4.432 = 1.477 ms
+			3		3
+2.Cociente
+La formula es C=tiempo lineal
+		tiempo binario
+
+Utilizamos el promedio de las tablas:
+
+		C = 527.132 =  Cociente= 356.90
+		    1.477 
+
+Lo que significa que la búsqueda lineal tardó aproximadamente 356.90 veces más que la búsqueda binaria.
+Por lo cual, la búsqueda binaria tuvo un rendimiento considerablemente mejor al buscar las 1.000 claves dentro del arreglo ordenado de 1.000.000 de elementos.
+ 
+PROCESO H1
+En mi proceso conviene ordenar primero?
+En mi proceso H1 inventario de una panadería, que consiste en registrar las entradas y ventas de salteñas, empanadas y pizzas, conviene mantener los registros ordenados para facilitar la búsqueda de productos y movimientos. Aunque ordenar inicialmente requiere tiempo, permite utilizar la búsqueda binaria y encontrar información más rápidamente cuando aumenta la cantidad de registros y se realizan numerosas consultas.

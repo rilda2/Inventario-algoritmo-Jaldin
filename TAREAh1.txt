@@ -1,0 +1,16 @@
+PRÁCTICA 1-CAZA TU PROCESO LENTO
+1. ¿Cuál es el proceso lento o problemático?
+En una tienda dedicada a la venta de salteñas, pizzas y empanadas, actualmente no se cuenta con un control preciso de las entradas de productos y las ventas realizadas durante el día. Esto dificulta conocer el monto exacto de los ingresos diarios, la cantidad de productos vendidos y el stock restante. Para obtener esta información, se debe realizar un conteo manual y revisar los registros de ventas, lo que puede ocasionar errores, pérdida de información y demoras.
+2. ¿Quién sufre este problema?
+El propietario porque no conoce con exactitud los ingresos diarios ni las ganancias obtenidas.
+El vendedor o encargado porque debe realizar cálculos y conteos manuales para controlar las ventas y los productos disponibles.
+3. ¿Cuántos datos se manejan?
+Se manejan datos relacionados con los productos y las ventas entre ellos:
+- Nombre del producto salteñas, pizzas y empanadas.
+- Precio de cada producto.
+- Cantidad de productos ingresados.
+- Cantidad de productos vendidos.
+- Total de ventas.
+- Cantidad de productos restantes de la venta.
+4. ¿Cuánto tarda actualmente?
+Actualmente se necesita invertir tiempo adicional para contar los productos restantes, revisar las ventas y realizar los cálculos manualmente. Esto puede tomar entre 15 minutos al finalizar la jornada.
