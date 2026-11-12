@@ -9,7 +9,7 @@ pnpm dev
 
 A excepción de Clase 3 ejecutar con: node Medicion.js
 
-#Tarea – Clase 3 
+# Tarea – Clase 3 
 El ejercicio permite realizar mediciones y observar el comportamiento de los algoritmos.
 Ejecución
 Para ejecutar el ejercicio, abre la terminal en la carpeta del proyecto y utiliza el siguiente comando:
@@ -24,5 +24,4 @@ Para ejecutar el ejercicio :
 pnpm dev
 
 
-## Autor
-Estudiante de la materia de Análisis de Algoritmos.
+
