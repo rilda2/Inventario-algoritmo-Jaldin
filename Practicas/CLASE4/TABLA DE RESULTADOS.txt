@@ -25,4 +25,4 @@ Por lo cual, la búsqueda binaria tuvo un rendimiento considerablemente mejor al
  
 PROCESO H1
 En mi proceso conviene ordenar primero?
-En mi proceso H1 inventario de una panadería, que consiste en registrar las entradas y ventas de salteñas, empanadas y pizzas, conviene mantener los registros ordenados para facilitar la búsqueda de productos y movimientos. Aunque ordenar inicialmente requiere tiempo, permite utilizar la búsqueda binaria y encontrar información más rápidamente cuando aumenta la cantidad de registros y se realizan numerosas consultas.
+En mi proceso H1 inventario de una tienda de panadería, que consiste en registrar las entradas y ventas de los productos, conviene mantener los registros ordenados para facilitar la búsqueda de productos y movimientos. Debido a que en la tienda se necesita consultar productos, cantidades ingresadas y ventas realizadas. Al mantener los registros ordenados, se puede localizar la información más rápido.

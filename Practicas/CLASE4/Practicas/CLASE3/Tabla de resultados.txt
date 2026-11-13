@@ -1,0 +1,10 @@
+Tabla de resultados – Búsqueda lineal
+
+Cantidad de elementos	Tiempo promedio			Comparación
+n = 500.000		0.48 ms				Referencia inicial
+4n = 2.000.000		1.74 ms				3.66 veces
+16n = 8.000.000		5.57 ms				3.19 veces
+
+resultados
+- Al aumentar los datos de 500.000 a 2.000.000, el tiempo aumentó aproximadamente 3.66 veces.
+- Al aumentar los datos de 2.000.000 a 8.000.000, el tiempo aumentó aproximadamente 3.19 veces.
