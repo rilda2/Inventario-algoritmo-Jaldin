@@ -23,5 +23,13 @@ Ejecución
 Para ejecutar el ejercicio :
 pnpm dev
 
+# Tarea – Clase 5: Torneo en tu lenguaje
+inserción y MergeSort
+Dentro de la tabla de tiempos se encuentra el informe de conclusiones.
+
+Ejecución
+Para ejecutar el ejercicio :
+pnpm dev
+
 
 
