@@ -1,0 +1,24 @@
+TABLA DE RESULTADO
+total vendido de un día 1.000 consultas por medición,
+mediana de 5 repeticiones, mismo equipo
+
+n           Lineal (A)       Binaria (B)
+104         0.737 ms         0.676 ms
+1.000       5.260 ms         0.201 ms
+10.000      54.201 ms        0.224 ms
+100.000     736.517 ms       0.707 ms
+
+Búsqueda lineal:
+        736.517 = 140.02 veces más lento
+          5.260
+Búsqueda binaria:
+        0.707 = 3.52 veces más lento
+        0.201
+
+Costo de ordenar una vez (candidato B)
+n           Ordenar         Equilibrio
+104         0.045 ms        730 consultas
+1.000       0.260 ms        52 consultas
+10.000      3.703 ms        69 consultas
+100.000     97.093 ms       132 consultas
+
