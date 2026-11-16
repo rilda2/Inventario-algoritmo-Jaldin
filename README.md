@@ -31,5 +31,9 @@ Ejecución
 Para ejecutar el ejercicio :
 pnpm dev
 
+# Tarea – Clase 6: 
+Ejecución
+Para ejecutar el ejercicio :
+pnpm dev
 
 
