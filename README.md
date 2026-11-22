@@ -43,11 +43,14 @@ Elección de la estructura de datos adecuada para el caso y medición de su cost
 
 inventario.md: datos del caso, operaciones que se realizan y cuáles se repiten más.
 estructura.md: estructuras elegidas y costo O de cada operación.
+
 medicion.md: comparación de la versión ingenua con la adecuada
+
 medicion.js: codigo de la medición.
 
 ## Ejecutar la medición
 pnpm dev
+
 node medicion.js
 
 
