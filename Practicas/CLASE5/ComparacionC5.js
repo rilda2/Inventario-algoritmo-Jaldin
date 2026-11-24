@@ -1,3 +1,4 @@
+
 import { performance } from "node:perf_hooks";
 
 const cantidades = [10000, 20000, 40000, 80000];
@@ -6,7 +7,8 @@ const numeroCorridas = 3;
 function generarDatos(cantidad) {
     return Array.from({ length: cantidad }, () => Math.floor(Math.random() * 1000000));
 }
-// insercion 
+
+// insercion
 function insercion(arreglo) {
     for (let i = 1; i < arreglo.length; i++) {
         const actual = arreglo[i];
@@ -19,6 +21,7 @@ function insercion(arreglo) {
     }
     return arreglo;
 }
+
 // mergesort
 function mergeSort(arreglo) {
     const auxiliar = new Array(arreglo.length);
@@ -42,6 +45,40 @@ function mergeSort(arreglo) {
     return arreglo;
 }
 
+// quicksort
+function quickSort(arreglo) {
+
+    function ordenar(inicio, fin) {
+        while (inicio < fin) {
+            const pivote = arreglo[Math.floor((inicio + fin) / 2)];
+
+            let i = inicio;
+            let j = fin;
+
+            while (i <= j) {
+                while (arreglo[i] < pivote) i++;
+                while (arreglo[j] > pivote) j--;
+
+                if (i <= j) {
+                    [arreglo[i], arreglo[j]] = [arreglo[j], arreglo[i]];
+                    i++;
+                    j--;
+                }
+            }
+            if (j - inicio < fin - i) {
+                if (inicio < j) ordenar(inicio, j);
+                inicio = i;
+            } else {
+                if (i < fin) ordenar(i, fin);
+                fin = j;
+            }
+        }
+    }
+
+    ordenar(0, arreglo.length - 1);
+    return arreglo;
+}
+
 function estaOrdenado(arreglo) {
     for (let i = 1; i < arreglo.length; i++) {
         if (arreglo[i - 1] > arreglo[i]) return false;
@@ -50,12 +87,14 @@ function estaOrdenado(arreglo) {
 }
 
 const algoritmos = [
-    { nombre: "Inserción", fn: insercion },
+    { nombre: "Insercion", fn: insercion },
     { nombre: "MergeSort", fn: mergeSort },
+    { nombre: "QuickSort", fn: quickSort },
 ];
 
-// Calentamiento y verificación 
+// Calentamiento y verificación
 const datosPrueba = generarDatos(1000);
+
 for (const { nombre, fn } of algoritmos) {
     if (!estaOrdenado(fn([...datosPrueba]))) {
         throw new Error(`${nombre} no ordenó correctamente.`);
@@ -64,23 +103,33 @@ for (const { nombre, fn } of algoritmos) {
 
 function medir({ nombre, fn }, datos) {
     const tiempos = [];
+
     for (let i = 0; i < numeroCorridas; i++) {
         const copia = [...datos];
         const inicio = performance.now();
         fn(copia);
         const fin = performance.now();
-        if (!estaOrdenado(copia)) throw new Error(`${nombre} no ordenó correctamente.`);
+
+        if (!estaOrdenado(copia)) {
+            throw new Error(`${nombre} no ordenó correctamente.`);
+        }
+
         tiempos.push(fin - inicio);
     }
+
     const promedio = tiempos.reduce((a, b) => a + b, 0) / numeroCorridas;
+
     return { tiempos, promedio };
 }
 
 const filas = [];
+
 for (const cantidad of cantidades) {
     const datos = generarDatos(cantidad);
+
     for (const alg of algoritmos) {
         const { tiempos, promedio } = medir(alg, datos);
+
         filas.push({
             Elementos: cantidad.toLocaleString("es-ES"),
             Algoritmo: alg.nombre,
