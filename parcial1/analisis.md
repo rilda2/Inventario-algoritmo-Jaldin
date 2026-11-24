@@ -26,6 +26,9 @@ b) teorema maestro de bolsillo
 a = 3
 b = 2
 d = 1
+bᵈ = 2¹ = 2
+a > bᵈ, porque 3 > 2.
+T(n) = 0(n^log2(3)) = 0(n^1,585).
 
 
 (ii) T(n) = T(n/2) + n²
