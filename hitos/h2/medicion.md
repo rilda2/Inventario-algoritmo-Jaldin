@@ -13,6 +13,8 @@ Por eso la adecuada es el historial ordenado por fecha con busqueda binaria, ubi
 ## Protocolo que se siguio
 Datos generados por el programa, ya ordenados por fecha, con 4 registros por dia. Cada consulta pide las ventas de una semana de 6 dias de atencion, 24 registros, 2.000 consultas por medicion.
 
+Para cada tamaño y estructura se realizó una corrida de calentamiento y luego 3 corridas medidas. Se calculó el promedio de los tres tiempos para obtener el resultado final de la tabla.
+
 ## Resultados 
 | n | Ingenua | × fila anterior | Ruido | Adecuada | × fila anterior | Ruido |
 | 25.000 | 101,75 | — |             6%  | 1,292     | —             | 11% |
