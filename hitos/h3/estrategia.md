@@ -25,7 +25,7 @@ Si la tienda quisiera decidir cuantas salteñas, pizzas y empanadas preparar seg
 
 En este caso el capital disponible representa la capacidad de la mochila, el costo de los insumos representa el peso y la ganancia que genera cada producto representa su valor. El objetivo es aprovechar el dinero disponible para obtener la mayor ganancia.
 
-| Producto | Precio de venta | Costo de insumos | Ganancia por unidad | Relación ganancia/costo |
+| Producto | Precio de venta | Costo de insumos | Ganancia por unidad | ganancia/costo          |
 |:---------|----------------:|-----------------:|--------------------:|------------------------:|
 | Salteña  | 11 Bs           | 6 Bs             | 5 Bs                | 0.83                    |
 | Pizza    | 50 Bs           | 30 Bs            | 20 Bs               | 0.67                    |
