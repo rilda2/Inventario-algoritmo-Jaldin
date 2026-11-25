@@ -12,7 +12,7 @@ A excepción de Clase 3 ejecutar con: node Medicion.js
 # Tarea H1
 ## Caso Tienda - Salteñas Panchos
 
-## H1 Caza tu proceso lento
+H1 Caza tu proceso lento
 
 ## Descripción
 
